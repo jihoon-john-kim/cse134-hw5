@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8" />
+		<!-- Search Engine Optimization -->
+		<meta name="author" content="Ji Hoon Kim">
+		<meta name="description" content="Ji Hoon's tech blog is a space for sharing technology related to computer science and posting personal daily lives.">
+		
+		<style>	
+				@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+				#logoWide, #logoMedium, #logoNarrow, #rhceJpg, #rhcePng {display: none;}
+		</style>	
+		
+		<!-- CSS -->
+		<link rel="stylesheet" media="screen and (min-width:1024px)" href="wide.css" />
+		<link rel="stylesheet" media="screen and (min-width:641px) and (max-width:1023px)" href="medium.css" />
+		<link rel="stylesheet" media="screen and (max-width:640px)" href="narrow.css" />
+		
+		<!-- Java Script -->
+		<script defer src="script.js"></script>
+
+		<title>Ji Hoon's Tech Blog !</title>
+		<link rel="author" href="https://linkedin.com/in/jihoon-john-kim/">
+</head>
+
+<body>
+		<header class="wrapperHead">
+				<!--home logo-->
+				<section class="logo">
+				<a href="home.html">
+					<img id="logoWide" src="images/logo.png" alt="home">
+					<img id="logoMedium" src="images/logo.png" alt="home">
+					<img id="logoNarrow" src="images/logo.png" alt="home">
+				</a>
+				</section>
+	
+				<!--welcome Headline-->
+				<h1 class="welcomeHeadline">&nbsp;&nbsp;Welcome to <em>Ji Hoon's Tech Blog!</em> [Home]</h1>
+		
+		<!--menu bar-->
+		<nav class="menu">
+			<a href="methodtest.html">[PART1] REQ/RES</a>
+			<a href="webcomponent.html">[PART2] HIT#</a>
+		</nav>
+
+		<!--search-->
+		<section class="search">
+		<input list="featured" type="search" id="mySearch" name="q">
+			<datalist id="featured">
+				<option value="Resume">
+				<option value="Daily">
+				<option value="Tech Study">
+			</datalist>
+		<button>Search</button>
+		</section>
+	</header>
+
+	<main>
+
+		<!--welcome image-->
+		<picture>
+		  <img id="welcomeHomeImg" src="images/welcomeHome.png" alt="Welcome Home">
+		</picture>
+
+		<!--For hw score-->
+		<!--welcome mention-->
+		<h2>Welcome!! (text)</h2>
+		<p>
+		Thank <span style="font-size:1.5em">you</span> for coming <b>here!</b> 
+		<br>
+		I, <span style="background-color: orange">Ji Hoon Kim</span>, am glad to meet <i>you.</i>
+		</p>
+		
+		<h2>Welcome!! (audio)</h2>
+		<p>
+		<audio controls>
+		  <source src="images/welcome.ogg" type="audio/ogg">
+		  <source src="images/welcome.m4a" >
+		</audio>
+		</p>
+		
+		<h2>Welcome!! (video)</h2>
+		<p>
+		<video width="320" height="240" controls>
+		  <source src="images/Hello.mp4" type="video/mp4">
+		  <source src="images/Hello.ogg" type="video/ogg">
+		</video>
+		</p>
+
+		<aside>
+			<strong> Ji Hoon Kim </strong>
+			<br>
+			<span>
+				He is <code style="color: crimson; background-color: black">handsome!</code> Because his grandma said that!!
+				<br><br>
+				About Author
+				<br>
+				<iframe src="https://linkedin.com/in/jihoon-john-kim/" title="About Author"></iframe>
+			</span>
+		</aside>
+
+		canvas
+		 <br>
+		<canvas id="myCanvas">
+		Your browser does not support the canvas tag.
+		</canvas>
+		<script>
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#FF0000";
+		ctx.fillRect(0, 0, 30, 8);
+		ctx.fillRect(30, 0, 8, 100);
+		</script>
+		<br>
+
+		svg - circle
+		 <br>
+		<svg width="100" height="100">
+		  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+		</svg>
+
+		<br>
+
+		<!--table-->
+		<table>
+		  <caption>Anniversary</caption>
+		  <colgroup>
+			<col style="background-color:red">
+			<col style="background-color:yellow">
+		  </colgroup>   
+		  <tr>
+			<th>Date</th>
+			<th>Month</th>
+		  </tr>
+		  <tr>
+			<td>10th</td>            
+			<td>March</td>
+		  </tr>
+		  <tr>
+			<td>22nd</td>            
+			<td>April</td>
+		  </tr>
+		</table>
+
+		<br>
+		
+		<template>
+			<strong> Warnning </strong>
+			<div>Hidden this since div is No good.</div>
+		</template>
+
+		<!--/For hw score-->
+
+		<hr>
+
+		<!--resume-->
+		<section>
+		<h2 style="color:maroon">Resume</h2>
+			<!--CSS pop up-->
+			<button>1 page Resume</button>
+
+			<h3>Experience</h3>
+				<details>
+				  <summary>Amazon Intern</summary>
+				  2023 fall
+				</details>
+				<details>
+				  <summary>Google Intern</summary>
+				  2023 fall
+				</details>
+
+			<h3>Certification</h3>
+				<details>
+				  <summary>AWS</summary>
+				  <p>aws</p>
+				</details>
+				<details>
+				  <summary>RHCE</summary>
+				  <figure>
+					<img id="rhcePng" src="images/RHCE.png" alt="rhce id : 210-185-377" style="width:auto;">
+					<img id="rhceJpg" src="images/RHCE.jpg" alt="rhce id : 210-185-377" style="width:auto;">
+					<figcaption>Fig.1 - RHCE</figcaption>
+				  </figure>
+				</details>
+
+			<h3>Skill</h3>            
+				<details>
+				  <summary>React</summary>
+				  <p>react</p>
+				</details>
+				<details>
+				  <summary>Java</summary>
+				  <p>java</p>
+				</details>
+
+			<h3>Project</h3>            
+				<details>
+				  <summary>Calculator</summary>
+				  <p>calculator</p>
+				</details>
+				<details>
+				  <summary>Zip</summary>
+				  <p>zip</p>
+				</details>
+
+			<h3>Education</h3>            
+				<details>
+				  <summary>UCSD</summary>
+				  <p>ucsd</p>
+				</details>
+				<details>
+				  <summary>Citrus College</summary>
+				  <p>citrus college</p>
+				</details>
+		</section>
+		
+		<hr>
+
+		<!--blog-->
+		<section>
+		<h2 style="color:maroon">Blog</h2>
+			<h3>Daily</h3>
+			<ul>
+				<li><a href="stories/.html">School</a></li>
+				<li><a href="stories/.html">Foodie</a></li>
+			</ul>
+			<h3>Tech Study</h3>    
+			<ul>
+				<li><a href="stories/.html">Programming</a></li>
+				<li><a href="stories/.html">Web</a></li>
+			</ul>
+		</section>
+
+		<hr>
+
+	</main>
+
+	<footer>
+		<!--contact-->    
+		<section>
+		<h2 style="color:maroon">Contact</h2>
+			<pre>    LinkedIn  <a href="https://linkedin.com/in/jihoon-john-kim/">linkedin.com/in/jihoon-john-kim/</a></pre>
+			<pre>    E-mail    chunikjh@gmail.com</pre>
+			<pre>    Phone     909 969 3637</pre>
+			<pre>    Github    <a href="https://github.com/chunikjh">github.com/chunikjh</a></pre>   
+		<p>Copyright 2022. Ji Hoon Kim, all rights reserved.</p>
+		<ol>
+			<li>Attribution</li>
+			<li>Noncommercial</li>
+			<li>Share Alike</li>
+		</ol>
+		</section>
+	</footer>
+</body>
+</html>
+
+<!-- , , , , , , , , 
+, , , , , , , , , , , 
+, , , , , , , , , , , , , 
+, , , , svg* ul, , , , , , 
+, , , , , , , , 
+, , , , , , , , , , ,  -->
+
+<!-- html, head, title, meta, link, script*, style*, body, 
+main, h1, h2, h3, p, section, header, footer, aside, nav, div, 
+span, br, b, i, strong, em, code, pre, hr, a, img, picture, iframe, 
+audio, video, source, canvas*, svg* ul, ol, optgroup, li, form, label, 
+fieldset, legend, input, textarea, datalist, select, option, details, 
+summary, button, template, table, tr, td, th, caption, col, colgroup, figure, figcaption -->

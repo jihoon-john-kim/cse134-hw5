@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8" />
+		<!-- Search Engine Optimization -->
+		<meta name="author" content="Ji Hoon Kim">
+		<meta name="description" content="Ji Hoon's tech blog is a space for sharing technology related to computer science and posting personal daily lives.">
+		
+		<style>	
+				@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+				#logoWide, #logoMedium, #logoNarrow, #rhceJpg, #rhcePng {display: none;}
+		</style>	
+		
+		<!-- CSS -->
+		<link rel="stylesheet" media="screen and (min-width:1024px)" href="wide.css" />
+		<link rel="stylesheet" media="screen and (min-width:641px) and (max-width:1023px)" href="medium.css" />
+		<link rel="stylesheet" media="screen and (max-width:640px)" href="narrow.css" />
+		
+		<!-- Java Script -->
+		<script defer type="text/javascript" src="method.js"></script>
+
+		<title>Ji Hoon's Tech Blog !</title>
+		<link rel="author" href="https://linkedin.com/in/jihoon-john-kim/">
+</head>
+
+<body>
+		<header class="wrapperHead">
+				<!--home logo-->
+				<section class="logo">
+				<a href="home.html">
+					<img id="logoWide" src="images/logo.png" alt="home">
+					<img id="logoMedium" src="images/logo.png" alt="home">
+					<img id="logoNarrow" src="images/logo.png" alt="home">
+				</a>
+				</section>
+	
+				<!--welcome Headline-->
+				<h1 class="welcomeHeadline">&nbsp;&nbsp;[part 1] METHOD TEST</h1>
+		
+		<!--menu bar-->
+		<nav class="menu">
+			<a href="methodtest.html">[PART1] REQ/RES</a>
+			<a href="webcomponent.html">[PART2] HIT#</a>
+		</nav>
+
+		<!--search-->
+		<section class="search">
+		<input list="featured" type="search" id="mySearch" name="q">
+			<datalist id="featured">
+				<option value="Resume">
+				<option value="Daily">
+				<option value="Tech Study">
+			</datalist>
+		<button>Search</button>
+		</section>
+	</header>
+
+	<main>
+
+
+	<form>
+		<fieldset>
+			<legend>Blog Posting:</legend>
+				<label for="idNum">ID Number </label><br>
+				<input type="text" id="idNum" placeholder="ID NUMBER" value="1">
+				<br>
+				<br>
+				<label for="article_name">Title </label><br>
+				<input type="text" id="article_name" placeholder="Unknown Title" value="Unknown Title">
+				<br>
+				<br>
+				<label for="gender">Gender</label><br>
+				<input type='radio' name='gender' value='female'>Female</input>
+				<input type='radio' name='gender' value='male'>Male</input>
+				<input type='radio' name='gender' value='nocomment' checked>No Comment</input>
+				<br>
+				<br>
+				<label for="purpose">Purpose</label><br>
+				<select>
+					<option name="purpose" value = "announce" selected>Announce</option>
+					<option name="purpose" value = "qestion">Qestion</option>			
+					<option name="purpose" value = "answer">Answer</option>
+				</select>
+				<br>
+				<br>
+				<label for="article_body">Article </label><br>
+				<textarea required id="article_body" rows="10" cols="50">Unknown Article</textarea>
+				<br>
+		</fieldset>
+				<br>
+				<br>
+		<!-- fetch()-->
+		<fieldset>
+			<legend>Using fetch( ) </legend>
+			<menu>
+				<label for="usingMethod">Method</label>
+				<input type='radio' name='usingMethod' value='fetch' checked>Fetch</input>
+				<input type='radio' name='usingMethod' value='xml'>XML</input><br><br>
+				<input type="button" id="post" value="postBtn"></input>
+				<input type="button" id="get" value="getBtn"></input>
+				<input type="button" id="put" value="putBtn"></input>
+				<input type="button" id="delete" value="deleteBtn"></input>
+			</menu>	
+			<output>
+				<label for="response">Response for fetch() / XMLHttpRequest( )</label><br>
+				<textarea id="response" rows="30" cols="50"></textarea>
+			</output>
+		</fieldset>
+				<br>
+				<br>
+	</form>		
+
+					
+					
+	</main>
+
+	<footer>
+		<!--contact-->    
+		<section>
+		<h2 style="color:maroon">Contact</h2>
+			<pre>    LinkedIn  <a href="https://linkedin.com/in/jihoon-john-kim/">linkedin.com/in/jihoon-john-kim/</a></pre>
+			<pre>    E-mail    chunikjh@gmail.com</pre>
+			<pre>    Phone     909 969 3637</pre>
+			<pre>    Github    <a href="https://github.com/chunikjh">github.com/chunikjh</a></pre>   
+		<p>Copyright 2022. Ji Hoon Kim, all rights reserved.</p>
+		<ol>
+			<li>Attribution</li>
+			<li>Noncommercial</li>
+			<li>Share Alike</li>
+		</ol>
+		</section>
+	</footer>
+</body>
+</html>
+
+<!-- , , , , , , , , 
+, , , , , , , , , , , 
+, , , , , , , , , , , , , 
+, , , , svg* ul, , , , , , 
+, , , , , , , , 
+, , , , , , , , , , ,  -->
+
+<!-- html, head, title, meta, link, script*, style*, body, 
+main, h1, h2, h3, p, section, header, footer, aside, nav, div, 
+span, br, b, i, strong, em, code, pre, hr, a, img, picture, iframe, 
+audio, video, source, canvas*, svg* ul, ol, optgroup, li, form, label, 
+fieldset, legend, input, textarea, datalist, select, option, details, 
+summary, button, template, table, tr, td, th, caption, col, colgroup, figure, figcaption -->

@@ -1,0 +1,99 @@
+.wrapperHead {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+		grid-template-rows: .5fr .5fr;
+		grid-gap: 5px 5px;
+	}
+.logo {
+		grid-column: 1;
+		grid-row: 1;
+	}		
+.welcomeHeadline {
+		grid-column: 2/5;
+		grid-row: 0.5;
+	}
+.menu {			
+		grid-column: 2/3;
+		grid-row: 2;
+	}	
+.search {			
+		grid-column: 3;
+		grid-row: 2;
+	}
+picture img{
+		width: 25rem; height: auto;	
+		margin: 10% 15% 15% 10%;
+		border: 3px solid rgba(0,255,0,0.2);
+		border-radius:50%;
+	}
+img#logoNarrow {
+		box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 13px 20px 0 rgba(255, 255, 255, 0.6);		
+		display: block;
+		border: 3px solid rgba(0,255,0,0.2);
+		border-radius: 35%;
+		padding: 0.5rem;
+		min-width: 5rem;
+		width: auto;
+		max-width: 3rem; 
+		height: auto; 
+}
+img#logoNarrow:hover {
+		background: yellow;
+		transition: all 2s;
+	}
+.menu{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: .5fr ;
+		grid-gap: 15px 15px;
+	}
+.search{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .5fr ;
+		grid-gap: 15px 15px;
+	}
+h1.welcomeHeadline{
+		font-family: 'Nanum Pen Script', cursive;
+		font-size:1.1rem;
+		color: maroon;
+	}	
+nav a {
+		text-decoration-line: none;
+		font-family: 'Nanum Pen Script', cursive;
+		font-size : 3vh;
+		text-align: center;
+	}
+nav a:hover{
+		border-radius:50%;
+		background: yellow;
+		transition: all 1s;
+	}
+		
+img#rhceJpg {
+		display: block;		
+		padding: 0.1rem;
+		width: auto;
+		max-width: 30rem; 
+		height: auto; 
+	}
+
+img#welcomeHomeImg:hover{
+		transition: all ease 1s;
+		transform: rotate( 45deg );
+	}
+img#welcomeContactImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}	
+img#welcomeBlogImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}
+img#welcomeResumeImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}
